@@ -20,7 +20,7 @@ export const IconTextCard = ({ text, subtext, href, icon: IconComponent, size }:
             style={({ pressed }) => [styles.iconTextCard, pressed && { opacity: 0.7 }]}
             onPress={() => href && router.push(href)}
             accessibilityRole="button">
-                {IconComponent && <IconComponent size={size} color={colors.text} style={styles.textColumn} />}
+                {IconComponent && <IconComponent size={size} color={colors.primaryText} style={styles.textColumn} />}
                 <View style={styles.textColumn}>
                     <Text style={[type.label, !hasSubtext && styles.centered]}>{text}</Text>
                     {hasSubtext && <Text style={type.small}>{subtext}</Text>}
@@ -31,7 +31,7 @@ export const IconTextCard = ({ text, subtext, href, icon: IconComponent, size }:
 
 export const styles = StyleSheet.create({
     iconTextCard: {
-        backgroundColor: colors.surface, borderColor: colors.border, borderWidth: 1,
+        backgroundColor: 'green', borderColor: colors.border, borderWidth: 1,
         borderRadius: radius.card, padding: 20, gap: space.sm,
         flexDirection: 'row'
     },

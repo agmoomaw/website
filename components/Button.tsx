@@ -1,4 +1,4 @@
-import { surfaces, type } from '../constants/theme'
+import { type, colors } from '../constants/theme'
 import { useRouter, type Href } from 'expo-router'
 import { Pressable, Text } from 'react-native'
 
@@ -13,7 +13,7 @@ export const Button = ({ text, href }: ButtonProps) => {
 
     return (
         <Pressable
-            style={({ pressed }) => [surfaces.button, pressed && { opacity: 0.7 }]}
+            style={({ pressed }) => [pressed && { opacity: 0.7 }]} // ... pressed }) => [surfaces.button && pressed && ...
             onPress={() => href && router.push(href)}
 
             accessibilityRole="button">

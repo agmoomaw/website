@@ -76,7 +76,8 @@ export const hues = {
 export const colors = {
     primaryText: palette.hunterGreen,
     secondaryText: palette.fern,
-    background: palette.ivoryMist
+    background: palette.ivoryMist,
+    border: hues.hue4,
 }
 
 export const fonts = {

@@ -16,7 +16,7 @@ export const BackArrow = () => {
             accessibilityLabel="Go back"
             style={styles.back}
             >
-            <ChevronLeft size={32} color={colors.text} />
+            <ChevronLeft size={32} color={colors.primaryText} />
         </Pressable>
     )
 }

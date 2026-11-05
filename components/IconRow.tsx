@@ -11,7 +11,7 @@ type IconRowProps = {
 
 export const IconRow = ({ icon: IconComponent, text, size = 36 }: IconRowProps) => (
     <View style={styles.row}>
-        <IconComponent size={size} color={colors.text} strokeWidth={2} />
+        <IconComponent size={size} color={colors.primaryText} strokeWidth={2} />
         <Text style={[type.body, styles.text]}>{text}</Text>
     </View>
 )

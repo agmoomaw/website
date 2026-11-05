@@ -4,6 +4,6 @@ import { colors } from '../constants/theme'
 
 type Props = { icon: LucideIcon; size?: number; color?: string }
 
-export function Icon({ icon: IconComponent, size = 22, color = colors.primary }: Props) {
+export function Icon({ icon: IconComponent, size = 22, color = colors.primaryText }: Props) {
   return <IconComponent size={size} color={color} strokeWidth={2} />
 }

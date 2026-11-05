@@ -25,7 +25,7 @@ export const TextCard = ({ text, subtext, href }: TextCardProps) => {
 
 export const styles = StyleSheet.create({
     textCard: {
-        backgroundColor: colors.surface, borderColor: colors.border, borderWidth: 1,
+        backgroundColor: 'white', borderColor: colors.border, borderWidth: 1,
         borderRadius: radius.card, padding: 20, gap: space.sm,
     },
 })

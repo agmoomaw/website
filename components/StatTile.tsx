@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import { colors, space, surfaces, type } from '../constants/theme'
+import { colors, space, type } from '../constants/theme'
 
 type StatTileProps = {
     value: number | string
@@ -9,7 +9,7 @@ type StatTileProps = {
 
 export const StatTile = ({ value, label, highlighted = false }: StatTileProps) => (
     <View
-        style={[styles.tile, highlighted && surfaces.cardHighlighted]}
+        style={styles.tile} // , highlighted && colors.secondaryText]}
         accessible
         accessibilityLabel={`${value} ${label}`}
     >
@@ -20,7 +20,6 @@ export const StatTile = ({ value, label, highlighted = false }: StatTileProps) =
 
 const styles = StyleSheet.create({
     tile: {
-        ...surfaces.card,
         flex: 1,                   // three tiles share the row equally
         aspectRatio: 1,            // keep them square like Figma prototype
         paddingVertical: 0,
@@ -30,6 +29,6 @@ const styles = StyleSheet.create({
         gap: space.xs,
     },
     highlightedText: {
-        color: colors.primary,
+        color: colors.secondaryText,
     },
 })
